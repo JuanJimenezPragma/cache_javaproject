@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "caffeine_javaproject"
+  devtools:
+    add-properties: false
+  profiles:
+    include: null
+
+
+  data:
+    redis:
+      host: "localhost"
+      port: 6379
+      expirationMillis: 1800000
+
+caffeine:
+  expiration-millis: 1800000
